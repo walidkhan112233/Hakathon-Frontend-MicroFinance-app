@@ -1,0 +1,141 @@
+
+.dashboard-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  background-color: rgba(169, 169, 169, 0.7); /* Grey background with slight transparency */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.loan-section {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker background for the loan section */
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.loan-section h2 {
+  margin-top: 20px;
+}
+
+.loan-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #444; /* Darker border */
+  border-radius: 8px;
+  background-color: rgba(40, 40, 40, 0.8); /* Slightly darker background for each loan item */
+  color: black;
+}
+
+.loan-item button {
+  padding: 5px 10px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.loan-item button:hover {
+  background-color: #4d4d4d;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 700px;
+  max-height: 90vh;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.popup-content h3 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.popup-content h4 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.popup-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.popup-content input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.popup-content button {
+  padding: 12px 15px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.popup-content button:hover {
+  background-color: #464646;
+}
+
+.popup-content .close-btn {
+  background-color: #f44336;
+  margin-top: 10px;
+}
+
+.popup-content .close-btn:hover {
+  background-color: #d32f2f;
+}
+
+@media (max-width: 480px) {
+  .popup {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .popup-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .popup-content input {
+    font-size: 0.9rem;
+  }
+
+  .popup-content button {
+    font-size: 0.9rem;
+  }
+}

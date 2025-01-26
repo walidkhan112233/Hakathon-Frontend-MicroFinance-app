@@ -1,0 +1,62 @@
+/* General container styling */
+.landing-container {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f4f9;
+    min-height: calc(100vh - 100px); /* Leave space for footer and navbar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: black;
+    font-weight: 600;
+  }
+  
+  .category-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2x2 grid layout */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .category {
+    background-color: rgb(175, 175, 175);
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    height: 300px; /* Fixed height for each box */
+  }
+  
+  .category:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .category h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .category-link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 25px;
+    background-color: #1f1f1f;
+    color: white;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .category-link:hover {
+    background-color: #4b4b4b;
+  }
+  

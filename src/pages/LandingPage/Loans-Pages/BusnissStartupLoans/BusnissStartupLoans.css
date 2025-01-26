@@ -1,0 +1,88 @@
+.wedding-loans-container {
+    padding: 20px;
+    background-color: #f4f4f4;
+    min-height: calc(100vh - 100px); /* Leaving space for navbar and footer */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .loan-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1000px;
+  }
+  
+  .loan-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .loan-item {
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    position: relative;
+    transition: background-color 0.3s ease;
+  }
+  
+  .loan-item:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .loan-details {
+    margin-bottom: 10px;
+  }
+  
+  .details {
+    display: none;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .loan-item:hover .details {
+    display: block;
+  }
+  
+  .loan-link {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #007bff;
+    padding: 5px 10px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+  }
+  
+  .loan-link:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .calculator-placeholder {
+    margin-top: 50px;
+    width: 80%;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .calculator-placeholder p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
